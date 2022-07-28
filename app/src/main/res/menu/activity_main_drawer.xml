@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home"
+            android:title="@string/home"
+            android:iconTint="@color/icon" />
+        <item
+            android:id="@+id/register_list"
+            android:icon="@mipmap/ic_orange_folder"
+            android:title="@string/order_list_registered"
+            android:iconTint="@color/icon"/>
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@mipmap/ic_cart"
+            android:title="@string/cart"
+            android:iconTint="@color/icon"/>
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@mipmap/ic_people"
+            android:title="@string/contact"
+            android:iconTint="@color/icon"/>
+        <item
+            android:id="@+id/nav_special"
+            android:icon="@mipmap/ic_special"
+            android:title="@string/vitrin"
+            android:iconTint="@color/icon"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@mipmap/ic_about"
+            android:title="@string/about_us"
+            android:iconTint="@color/icon"/>
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/ic_email"
+            android:title="@string/call"
+            android:iconTint="@color/icon"/>
+    </group>
+
+    <item>
+        <menu>
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@mipmap/ic_log_out"
+                android:title="@string/log_out"
+                android:iconTint="@color/icon"/>
+        </menu>
+    </item>
+
+</menu>

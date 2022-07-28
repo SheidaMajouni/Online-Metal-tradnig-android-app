@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/table_row_explain_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="1234567"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/delivery_text_order"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="1234567"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/icon"
+        android:textSize="14dp"
+        app:layout_constraintTop_toBottomOf="@id/table_row_explain_cart"
+        app:layout_constraintRight_toRightOf="@+id/table_row_explain_cart" />
+
+    <TextView
+        android:id="@+id/table_row_price_cart"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="1234567"
+        android:textAlignment="center"
+        android:textColor="@color/icon"
+        android:textSize="14dp"
+        app:layout_constraintTop_toTopOf="@id/delivery_text_order"
+        app:layout_constraintRight_toLeftOf="@+id/delivery_text_order"/>
+
+    <TextView
+        android:id="@+id/how_much_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/how_much"
+        android:textStyle="italic"
+        app:layout_constraintRight_toRightOf="@+id/delivery_text_order"
+        app:layout_constraintTop_toBottomOf="@+id/table_row_price_cart"/>
+
+    <EditText
+        android:id="@+id/table_row_count_cart"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:inputType="number"
+        android:hint="@string/count"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/how_much_text"
+        app:layout_constraintRight_toRightOf="@+id/table_row_explain_cart"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_unit_holder_cart"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/how_much_text"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <Spinner
+            android:id="@+id/unit_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:prompt="@string/order"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

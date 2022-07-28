@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="1dp">
+
+    <TextView
+        android:id="@+id/text1"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:background="@drawable/border_corner"/>
+
+</android.support.constraint.ConstraintLayout>

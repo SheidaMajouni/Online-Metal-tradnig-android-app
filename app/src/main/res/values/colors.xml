@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#ae0f0b</color>-->
+    <!--<color name="colorPrimaryDark">#790a07</color>-->
+    <!--<color name="colorAccent">#144F7B</color>-->
+    <color name="textColor">#4f4e4e</color>
+    <color name="black">#000000</color>
+    <color name="backgroundColor">#d9d9d9</color>
+    <color name="liteBackgroundColor">#e7e6e6</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#2aba66</color>
+    <color name="cancel">#E16025</color>
+    <color name="border">#be3e3b</color>
+    <color name="submit">#ce6f6c</color>
+    <color name="lite_blue_background">#de9f9d</color>
+    <color name="half_black">#97bdbdbd</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="white_pressed">#de3030</color>
+    <color name="navy_blue">#144F7B</color>
+
+    <color name="colorPrimary">#57140c</color>
+    <color name="colorPrimaryDark">#57140c</color>
+    <color name="orange_circle">#ff5541</color>
+    <color name="light_orange">#ff954a</color>
+    <color name="yellow_circle">#ffc950</color>
+    <color name="icon">#666</color>
+    <color name="light_red">#e9573f</color>
+    <color name="colorAccent">#57140c</color>
+
+    <color name="walk_blue">#1891ff</color>
+    <color name="walk_green">#8cc152</color>
+    <color name="walk_orange">#fc6e51</color>
+    <color name="walk_gray">#95a5a6</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#2278d4</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#FFDE4F32</color>
+    <color name="dot_dark_screen4">#FF677272</color>
+    <color name="dot_dark_screen5">#FF677272</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#93c6fd</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#FFF29582</color>
+    <color name="dot_light_screen4">#FFC8DDDE</color>
+    <color name="dot_light_screen5">#FFC8DDDE</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+    </array>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border">
+
+    <TextView
+        android:id="@+id/deliver_pre_bill_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="1234567"
+        android:textAlignment="center"
+        android:textColor="@color/icon"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="0.16"
+        app:layout_constraintRight_toLeftOf="@+id/total_price_pre_bill_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/explain_pre_bill_text"
+        app:layout_constraintTop_toTopOf="@+id/explain_pre_bill_text" />
+
+    <TextView
+        android:id="@+id/total_price_pre_bill_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="1234567"
+        android:textAlignment="center"
+        android:textColor="@color/icon"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_weight="0.19"
+        app:layout_constraintRight_toLeftOf="@+id/price_pre_bill_text"
+        app:layout_constraintBottom_toBottomOf="@id/explain_pre_bill_text"
+        app:layout_constraintLeft_toRightOf="@+id/deliver_pre_bill_text"
+        app:layout_constraintTop_toTopOf="@id/explain_pre_bill_text" />
+
+    <TextView
+        android:id="@+id/unit_pre_bill_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="1234567"
+        android:textAlignment="center"
+        android:textColor="@color/icon"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintRight_toLeftOf="@+id/count_pre_bill_text"
+        app:layout_constraintBottom_toBottomOf="@id/explain_pre_bill_text"
+        app:layout_constraintLeft_toRightOf="@+id/price_pre_bill_text"
+        app:layout_constraintTop_toTopOf="@id/explain_pre_bill_text" />
+
+    <EditText
+        android:id="@+id/count_pre_bill_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:hint="@string/count"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintRight_toLeftOf="@+id/explain_pre_bill_text"
+        app:layout_constraintBottom_toBottomOf="@id/explain_pre_bill_text"
+        app:layout_constraintLeft_toRightOf="@+id/unit_pre_bill_text"
+        app:layout_constraintTop_toTopOf="@+id/explain_pre_bill_text" />
+
+    <TextView
+        android:id="@+id/price_pre_bill_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="1234567"
+        android:textAlignment="center"
+        android:textColor="@color/icon"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_weight="0.16"
+        app:layout_constraintRight_toLeftOf="@+id/unit_pre_bill_text"
+        app:layout_constraintBottom_toBottomOf="@id/explain_pre_bill_text"
+        app:layout_constraintLeft_toRightOf="@+id/total_price_pre_bill_text"
+        app:layout_constraintTop_toTopOf="@id/explain_pre_bill_text" />
+
+    <TextView
+        android:id="@+id/explain_pre_bill_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1234567"
+        android:textAlignment="center"
+        android:textColor="@color/icon"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_weight="0.16"
+        app:layout_constraintRight_toLeftOf="@+id/row_pre_bill"
+        app:layout_constraintLeft_toRightOf="@+id/count_pre_bill_text" />
+
+    <TextView
+        android:id="@+id/row_pre_bill"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="1234567"
+        android:textAlignment="center"
+        android:textColor="@color/icon"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_weight="0.09"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/explain_pre_bill_text"
+        app:layout_constraintLeft_toRightOf="@+id/explain_pre_bill_text"
+        app:layout_constraintTop_toTopOf="@id/explain_pre_bill_text" />
+
+</android.support.constraint.ConstraintLayout>

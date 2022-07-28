@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/main_constrain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/link">
+                <TextView
+                    android:id="@+id/registered_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/order_list_registered"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TabHost
+                    android:id="@+id/tabHost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/registered_text">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TabWidget>
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/tab1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="1dp"
+                                    app:layout_constraintLeft_toLeftOf="@+id/topic_row_registered"
+                                    app:layout_constraintRight_toRightOf="@+id/topic_row_registered"
+                                    app:layout_constraintTop_toBottomOf="@+id/topic_row_registered"
+                                    android:background="@color/half_black"/>
+
+                                <android.support.constraint.ConstraintLayout
+                                    android:id="@+id/topic_row_registered"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/status_registered"
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:background="#f6f6f6"
+                                        android:gravity="center"
+                                        android:paddingBottom="7dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="7dp"
+                                        android:text="@string/status"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="11dp"
+                                        android:foregroundGravity="center_vertical"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="@id/timer_registered"
+                                        app:layout_constraintHorizontal_chainStyle="spread"
+                                        app:layout_constraintHorizontal_weight="0.39"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toLeftOf="@+id/timer_registered"
+                                        app:layout_constraintTop_toTopOf="@id/timer_registered" />
+
+
+                                    <TextView
+                                        android:id="@+id/timer_registered"
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:background="#f6f6f6"
+                                        android:gravity="center"
+                                        android:paddingBottom="7dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="7dp"
+                                        android:text="@string/register_date"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="11dp"
+                                        android:foregroundGravity="center_vertical"
+                                        android:textStyle="bold"
+                                        app:layout_constraintHorizontal_weight="0.24"
+                                        app:layout_constraintLeft_toRightOf="@+id/status_registered"
+                                        app:layout_constraintRight_toLeftOf="@+id/date_registered" />
+
+                                    <TextView
+                                        android:id="@+id/date_registered"
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:background="#f6f6f6"
+                                        android:gravity="center"
+                                        android:paddingBottom="7dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="7dp"
+                                        android:text="@string/order_code"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="11dp"
+                                        android:foregroundGravity="center_vertical"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="@+id/timer_registered"
+                                        app:layout_constraintHorizontal_weight="0.27"
+                                        app:layout_constraintLeft_toRightOf="@+id/timer_registered"
+                                        app:layout_constraintRight_toLeftOf="@+id/row_registered"
+                                        app:layout_constraintTop_toTopOf="@+id/timer_registered" />
+
+                                    <TextView
+                                        android:id="@+id/row_registered"
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:background="#f6f6f6"
+                                        android:gravity="center"
+                                        android:paddingBottom="7dp"
+                                        android:paddingLeft="2dp"
+                                        android:paddingRight="2dp"
+                                        android:paddingTop="7dp"
+                                        android:text="@string/row"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="11dp"
+                                        android:foregroundGravity="center_vertical"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="@id/timer_registered"
+                                        app:layout_constraintHorizontal_weight="0.10"
+                                        app:layout_constraintLeft_toRightOf="@+id/date_registered"
+                                        app:layout_constraintRight_toRightOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/timer_registered" />
+                                </android.support.constraint.ConstraintLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/register_recycle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/topic_row_registered" />
+
+                                <ProgressBar
+                                    android:id="@+id/store_progress"
+                                    style="?android:attr/progressBarStyleLarge"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:visibility="gone"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/topic_row_registered"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"/>
+
+                                <ImageView
+                                    android:id="@+id/refresh"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/ic_orange_refresh"
+                                    android:visibility="gone"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/topic_row_registered"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"/>
+
+                                <TextView
+                                    android:id="@+id/empty_list"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/empty_list"
+                                    android:visibility="invisible"
+                                    android:layout_margin="20dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/topic_row_registered"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"/>
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/tab2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="1dp"
+                                    app:layout_constraintLeft_toLeftOf="@+id/topic_row_registered_second"
+                                    app:layout_constraintRight_toRightOf="@+id/topic_row_registered_second"
+                                    app:layout_constraintTop_toBottomOf="@+id/topic_row_registered_second"
+                                    android:background="@color/half_black"/>
+
+                                <android.support.constraint.ConstraintLayout
+                                    android:id="@+id/topic_row_registered_second"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/status_registered_second"
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:background="#f6f6f6"
+                                        android:gravity="center"
+                                        android:paddingBottom="7dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="7dp"
+                                        android:text="@string/status"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="11dp"
+                                        android:foregroundGravity="center_vertical"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="@id/timer_registered_second"
+                                        app:layout_constraintHorizontal_chainStyle="spread"
+                                        app:layout_constraintHorizontal_weight="0.39"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toLeftOf="@+id/timer_registered_second"
+                                        app:layout_constraintTop_toTopOf="@id/timer_registered_second" />
+
+
+                                    <TextView
+                                        android:id="@+id/timer_registered_second"
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:background="#f6f6f6"
+                                        android:gravity="center"
+                                        android:paddingBottom="7dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="7dp"
+                                        android:text="@string/register_date"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="11dp"
+                                        android:foregroundGravity="center_vertical"
+                                        android:textStyle="bold"
+                                        app:layout_constraintHorizontal_weight="0.24"
+                                        app:layout_constraintLeft_toRightOf="@+id/status_registered_second"
+                                        app:layout_constraintRight_toLeftOf="@+id/date_registered_second" />
+
+                                    <TextView
+                                        android:id="@+id/date_registered_second"
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:background="#f6f6f6"
+                                        android:gravity="center"
+                                        android:paddingBottom="7dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="7dp"
+                                        android:text="@string/order_code"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="11dp"
+                                        android:foregroundGravity="center_vertical"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="@+id/timer_registered_second"
+                                        app:layout_constraintHorizontal_weight="0.27"
+                                        app:layout_constraintLeft_toRightOf="@+id/timer_registered_second"
+                                        app:layout_constraintRight_toLeftOf="@+id/row_registered_second"
+                                        app:layout_constraintTop_toTopOf="@+id/timer_registered_second" />
+
+                                    <TextView
+                                        android:id="@+id/row_registered_second"
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:background="#f6f6f6"
+                                        android:gravity="center"
+                                        android:paddingBottom="7dp"
+                                        android:paddingLeft="2dp"
+                                        android:paddingRight="2dp"
+                                        android:paddingTop="7dp"
+                                        android:text="@string/row"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="11dp"
+                                        android:foregroundGravity="center_vertical"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="@id/timer_registered_second"
+                                        app:layout_constraintHorizontal_weight="0.10"
+                                        app:layout_constraintLeft_toRightOf="@+id/date_registered_second"
+                                        app:layout_constraintRight_toRightOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/timer_registered_second" />
+                                </android.support.constraint.ConstraintLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/register_recycle_second"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/topic_row_registered_second" />
+                            </android.support.constraint.ConstraintLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </TabHost>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageView
+                    android:id="@+id/image_chair"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/logo_dark"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_google"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/google"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_chair" />
+
+                <ImageView
+                    android:id="@+id/image_call"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/call"
+                    app:layout_constraintLeft_toRightOf="@+id/image_google"
+                    app:layout_constraintTop_toBottomOf="@+id/image_chair" />
+
+                <ImageView
+                    android:id="@+id/image_more"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/pointer"
+                    app:layout_constraintLeft_toRightOf="@+id/image_call"
+                    app:layout_constraintTop_toBottomOf="@+id/image_chair" />
+
+                <ImageView
+                    android:id="@+id/image_twitter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/twitter"
+                    app:layout_constraintRight_toLeftOf="@+id/image_google"
+                    app:layout_constraintTop_toBottomOf="@+id/image_chair" />
+
+                <ImageView
+                    android:id="@+id/image_facebook"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/facebook"
+                    app:layout_constraintRight_toLeftOf="@+id/image_twitter"
+                    app:layout_constraintTop_toBottomOf="@+id/image_chair" />
+
+                <TextView
+                    android:id="@+id/chair_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/all_chair_right"
+                    android:textSize="13dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_google" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

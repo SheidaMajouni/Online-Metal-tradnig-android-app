@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<android.support.constraint.ConstraintLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:padding="10dp">
+
+                <ViewFlipper
+                    android:id="@+id/slideShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/slide_one_one" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/slide_one_two" />
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/slide_one_three" />
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/slide_one_four" />
+
+                </ViewFlipper>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/store_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/link"
+                app:layout_constraintTop_toBottomOf="@+id/linear"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_orange_refresh"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/link"
+                app:layout_constraintTop_toBottomOf="@+id/linear"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/liteBackgroundColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear" />
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recycleView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0wrap"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@color/liteBackgroundColor"-->
+                <!--app:layout_constraintBottom_toTopOf="@id/link"-->
+                <!--app:layout_constraintTop_toBottomOf="@id/linear" />-->
+
+            <!--<android.support.constraint.ConstraintLayout-->
+                <!--android:id="@+id/link"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_chair"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:src="@drawable/logo_dark"-->
+                    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                    <!--app:layout_constraintRight_toRightOf="parent" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_google"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:src="@drawable/google"-->
+                    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                    <!--app:layout_constraintRight_toRightOf="parent"-->
+                    <!--app:layout_constraintTop_toBottomOf="@+id/image_chair" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_call"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:src="@drawable/call"-->
+                    <!--app:layout_constraintLeft_toRightOf="@+id/image_google"-->
+                    <!--app:layout_constraintTop_toBottomOf="@+id/image_chair" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_more"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:src="@drawable/pointer"-->
+                    <!--app:layout_constraintLeft_toRightOf="@+id/image_call"-->
+                    <!--app:layout_constraintTop_toBottomOf="@+id/image_chair" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_twitter"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:src="@drawable/twitter"-->
+                    <!--app:layout_constraintRight_toLeftOf="@+id/image_google"-->
+                    <!--app:layout_constraintTop_toBottomOf="@+id/image_chair" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_facebook"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:src="@drawable/facebook"-->
+                    <!--app:layout_constraintRight_toLeftOf="@+id/image_twitter"-->
+                    <!--app:layout_constraintTop_toBottomOf="@+id/image_chair" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/chair_right"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:text="@string/all_chair_right"-->
+                    <!--android:textSize="13dp"-->
+                    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                    <!--app:layout_constraintRight_toRightOf="parent"-->
+                    <!--app:layout_constraintTop_toBottomOf="@+id/image_google" />-->
+
+            <!--</android.support.constraint.ConstraintLayout>-->
+        <!--</android.support.constraint.ConstraintLayout>-->
+
+    <!--</ScrollView>-->
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">Chair</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--group names-->
+    <string name="iron_sheet">iron sheet</string>
+    <string name="Girder">Girder</string>
+    <string name="Rebar">Rebar</string>
+    <string name="nabshi">nabshi</string>
+    <string name="iron">iron</string>
+    <!--factories-->
+    <string name="zob_ahan_factory">zob ahan factory</string>
+    <string name="fulad_mobarake_factory">fulad mobarake factory</string>
+    <string name="kavian_factory">kavian factory</string>
+    <string name="arian_factory">arian factory</string>
+    <!--navigation buttons-->
+    <string name="chat">chat</string>
+    <string name="contact">contact</string>
+    <string name="store">store</string>
+    <string name="vitrin">vitrin</string>
+    <string name="more">more</string>
+    <!--titles of row-->
+    <string name="size">size</string>
+    <string name="row">row</string>
+    <string name="explain">explain</string>
+    <string name="price">price</string>
+    <string name="order">order</string>
+    <string name="cart">cart</string>
+    <string name="delivery_place">delivery place</string>
+    <string name="count">count</string>
+    <string name="total_price">total price</string>
+    <string name="unit">unit</string>
+    <string name="enter_number">please enter the number of your order</string>
+    <string name="order_list_registered">order list registered</string>
+    <string name="register_date">register date</string>
+    <string name="timer">timer</string>
+    <string name="status">status</string>
+    <string name="order_status">order status</string>
+    <string name="pre_bill">pre bill</string>
+    <string name="wait">wait</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="factory">factory</string>
+    <string name="minute">minute</string>
+    <string name="pay">pay</string>
+    <string name="how_to_pay">pick how do you want to pay</string>
+    <string name="final_bill">final factor</string>
+    <string name="your_id_text">your id is: </string>
+    <string name="your_order">your order</string>
+    <string name="add_to_your_basket">add to your basket</string>
+    <string name="has_been_added_to_basket">has been added to your basket</string>
+    <string name="your_basket">your basket</string>
+    <string name="submit">submit</string>
+    <string name="producer_info">producer information</string>
+    <string name="customer_info">customer information</string>
+    <string name="pre_bill_in_the_name_of">pre bill in the name of</string>
+    <string name="tax">tax</string>
+    <string name="sum">sum</string>
+    <string name="accept">accept</string>
+    <string name="product_size">product size</string>
+    <string name="Thickness">Thickness</string>
+    <string name="length">length</string>
+    <string name="Width">Width</string>
+    <string name="Height">Height</string>
+    <string name="username">username</string>
+    <string name="phone">phone</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="sign_up">sign up</string>
+    <string name="sign_in">sign in</string>
+    <string name="click_to_sign_in">click here to sign in</string>
+    <string name="fill_boxes_to_login">fill boxes to login</string>
+    <string name="fill_boxes_to_register">fill boxes to register</string>
+    <string name="authentication">authentication</string>
+    <string name="authInfo">get a verification code that sent by sms</string>
+    <string name="verification_code">verification code</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_user_name">This phone number is invalid</string>
+    <string name="error_invalid_confirm">This confirm is invalid</string>
+    <string name="error_registration_failed">Registration failed</string>
+    <string name="error_conflict">conflict</string>
+    <string name="shopping_cart_alert_message">do you want to delete this order from shopping cart?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="enter_specifications">please enter specification</string>
+    <string name="empty_shopping_cart">your shopping cart is empty</string>
+    <string name="search">search</string>
+    <string name="create_message">create message</string>
+    <string name="inbox">inbox</string>
+    <string name="title">title</string>
+    <string name="send_message">send message</string>
+    <string name="body">body_message</string>
+    <string name="refuse">refuse</string>
+    <string name="message">message</string>
+    <string name="message_detail">message detail</string>
+    <string name="question">question</string>
+    <string name="answer">answer</string>
+    <string name="doorway">doorway</string>
+    <string name="credit">credit</string>
+    <string name="customer_name">customer_name</string>
+    <string name="seller_name">seller_name</string>
+    <string name="product_count">product count</string>
+    <string name="bill_price">bill price</string>
+    <string name="tolerance">Tolerance</string>
+    <string name="final_cost">final cost</string>
+    <string name="about_us">about us</string>
+    <string name="no_image">no picture have been taken</string>
+    <string name="order_by_image">order by image</string>
+    <string name="reject_shopping_cart">the shopping cart wan not confirmed</string>
+    <string name="log_out">log out</string>
+    <string name="time_out">time out</string>
+    <string name="forget_password">forget password?</string>
+    <string name="inter_phone">inter phone number</string>
+    <string name="verify_will_be_sent">verification code will be sent</string>
+    <string name="get_verify">get code</string>
+    <string name="insert_new_password">insert new password</string>
+    <string name="verify">verify</string>
+    <string name="sent">sent</string>
+    <string name="error_reset_pass_failed">Reset pass failed</string>
+    <string name="error_register">error in register</string>
+    <string name="error_login">error in login</string>
+    <string name="error_verify">error in verify</string>
+    <string name="error_forgot_pass">error in updating password</string>
+    <string name="error_forgot_pass_no_user">there is no username for this phone number</string>
+    <string name="error_reset_password">error in reset password</string>
+    <string name="error_getting_product_manufacturer">error in receive list</string>
+    <string name="error_get_daily">error in getting daily product</string>
+    <string name="error_send_shopping_cart">error in sending shopping cart</string>
+    <string name="error_last_ten_order">error in receive orders</string>
+    <string name="error_pre_bill">error in getting pre bill</string>
+    <string name="error_confirm">error in confirming pre bill</string>
+    <string name="error_cancel">error in canceling pre bill</string>
+    <string name="error_upload_image">error in uploading image</string>
+    <string name="error_final_bill">error in getting final bill</string>
+    <string name="message_sent">message has been sent</string>
+    <string name="message_didnot_sent">message has been not sent</string>
+    <string name="send_nothing">you send nothing</string>
+    <string name="receive_nothing">your inbox is empty</string>
+    <string name="empty_message">title or body is empty</string>
+    <string name="alloy">alloy</string>
+    <string name="hint">hint</string>
+    <string name="insert_old_password">enter old password with hint text</string>
+    <string name="call">call</string>
+    <string name="exit">you left your account</string>
+    <string name="exit_pure">exit</string>
+    <string name="forced">forced</string>
+    <string name="chair_ironwork">chair_ironwork</string>
+    <string name="all_chair_right">all_chair_right</string>
+    <string name="quick_order">quick order</string>
+    <string name="send_pic">send pic</string>
+    <string name="send_voice">send voice</string>
+    <string name="send_file">send file</string>
+    <string name="quick_table">quick_table</string>
+    <string name="full_name">name and family name : </string>
+    <string name="score">score : </string>
+    <string name="home">home</string>
+    <string name="how_much">how_much</string>
+    <string name="there_is_no_product">there is no product</string>
+    <string name="about_chair_first">about_chair_first</string>
+    <string name="more_info">more info</string>
+    <string name="lorem">loremmmmmmmmmmmmmmmmmmmmm</string>
+    <string name="happy_connect">happy connect</string>
+    <string name="quick_call">quick call</string>
+    <string name="visit">visit</string>
+    <string name="with_us_in_social_networks">with_us_in_social_networks</string>
+    <string name="for_more_info">for more info</string>
+    <string name="focus">focus</string>
+    <string name="lorem_sec">lorem</string>
+    <string name="attention">attention</string>
+    <string name="be_update">be upfate</string>
+    <string name="trust">trust</string>
+    <string name="comment">comment</string>
+    <string name="my_orders">my orders</string>
+    <string name="my_shops">my shops</string>
+    <string name="order_code">order code</string>
+    <string name="compute_tax">compute tax</string>
+    <string name="ways_of_pay">ways of pay</string>
+    <string name="edit">edit</string>
+    <string name="check_net">check your internet connection</string>
+    <string name="name">name</string>
+    <string name="family_name">family name</string>
+    <string name="email">email</string>
+    <string name="complete_registering">complete registering</string>
+    <string name="fill_the_balnks_to_reg">fill the blank to complete registering process</string>
+    <string name="send">send</string>
+    <string name="be_in_call">be in call</string>
+    <string name="phone_number">phone number</string>
+    <string name="address">address</string>
+    <string name="full_address">tehra karaj</string>
+    <string name="national_id">national id</string>
+    <string name="sms_resend">sms will be resend</string>
+    <string name="wrong_sms_code_interred">wrong sms code interred</string>
+    <string name="empty_list">empty list</string>
+    <string name="user_info_did_not_send_try">user info did not send try again</string>
+    <string name="choose_your_file">choose your file</string>
+    <string name="coming_soon">coming soon</string>
+    <string name="edit_enable">edit enable</string>
+    <string name="walk_lorem">walk lorem</string>
+    <string name="before">before</string>
+    <string name="next">next</string>
+    <string name="go_to_app">go to app</string>
+
+    <string-array name="pay_way">
+        <item>doorway</item>
+        <item>credit</item>
+    </string-array>
+
+    <string-array name="delivery_array">
+        <item>factory</item>
+        <item>store</item>
+    </string-array>
+
+    <string-array name="unit_array">
+        <item>kilo</item>
+        <item>sheet</item>
+        <item>tonne</item>
+    </string-array>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

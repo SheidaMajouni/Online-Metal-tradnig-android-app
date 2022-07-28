@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Customize your theme here. -->
+        <item name="cc_tv_background_color">@color/colorAccent</item>
+        <item name="cc_is_animate_layout">true</item>
+        <item name="cc_tv_background_drawable">@drawable/menu_addcart_count_oval</item>
+        <item name="cc_tv_text_color">@android:color/white</item>
+        <item name="cc_layout_animation">@anim/bounce</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="menu_style">
+        <item name="android:background">@drawable/fab_label</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
